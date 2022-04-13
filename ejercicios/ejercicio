@@ -8,6 +8,54 @@ public class Productos {
     private int costo;
     private String tipoprod;
     
+    public Productos(int codigo, String descripcion, String tipoprod, int costo , String procedencia) {
+        this.codigo = codigo;
+        this.descripcion = descripcion;
+        this.tipoprod = tipoprod;
+        this.costo = costo;
+        this.procedencia = procedencia;
+    }
+    
+    
+    public int getCodigo() {
+    return this.codigo;
+    }
+    
+    public void setCodigo(int codigo) {
+    this.codigo = codigo;
+    }
+    
+     public String getDescripcion(String descripcion) {
+    return this.descripcion;
+    }
+    
+    public void setDescripcion(String Descripcion) {
+    this.descripcion = descripcion;
+    }
+    
+     public String getTipoprod(String tipoprod) {
+    return this.tipoprod;
+    }
+    
+    public void setTipoprod(String tipoprod) {
+    this.tipoprod = tipoprod;
+    }
+    
+     public int getCosto() {
+    return this.codigo;
+    }
+    
+    public void setCosto(int costo) {
+    this.costo = costo;
+    }
+    
+     public String getProcedencia(String procedencia) {
+    return this.procedencia;
+    }
+    
+    public void setProcedencia(String procedencia) {
+    this.procedencia = procedencia;
+    }
     
     
     
