@@ -1,1 +1,19 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+public class Productos {
+    private int codigo;
+    private String descripcion;
+    private String tipoprod;
+    private int costo;
+    private String tipoprod;
+    
+    
+    
+    
+    public static void main(String[] args) {
+        System.out.println("Hello, World!"); 
+    }
+}
+
 
