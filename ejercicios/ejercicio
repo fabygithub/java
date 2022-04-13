@@ -57,6 +57,13 @@ public class Productos {
     this.procedencia = procedencia;
     }
     
+     public void presentarProducto(int codigo, String descripcion, String tipoprod, int costo , String procedencia) {
+       
+       System.out.println(codigo + descripcion + tipoprod + costo , + procedencia);
+       
+       
+        
+    }
     
     
     public static void main(String[] args) {
