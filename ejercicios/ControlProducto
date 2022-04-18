@@ -1,0 +1,162 @@
+/*Utiliza sentencias de control para manipular el modelo
+ */
+package Presentacion;
+
+import Modelo.Producto;
+import java.util.Scanner;
+
+public class ControlProducto {
+static Scanner lector=new Scanner(System.in);    
+static Producto producto[]= null; 
+int cont;
+
+    public static void main(String[] args) {
+    
+    int codigo, costo;
+    String descrip;
+    
+        
+        producto=new Producto[3];
+        int op=0;
+        do{
+            System.out.println("MENU DE CONTROL");
+            System.out.println("MENU DE CONTROL");
+            System.out.println("MENU DE CONTROL");
+            System.out.println("MENU DE CONTROL");
+            System.out.println("MENU DE CONTROL");
+            System.out.println("MENU DE CONTROL");
+            System.out.println("SELECCIONE OPCION:");
+            
+            
+            op=4;
+            
+            switch(op){
+                
+            
+            case 1:ingresarDatos(); break;
+            case 2:editarDatos();break;
+            
+            case 4:System.out.println("Saliendo de Aplicacion");
+                   break;
+            default:System.out.println("Opciones   1/2/3/4....");
+            
+            System.out.println("CODIGO........:");codigo=lector.nextInt();
+            System.out.println("DESCRIPCION :");descrip=lector.next();
+            System.out.println("COSTO.....:");costo=lector.nextInt();
+            
+            }
+            
+   
+            
+           System.out.println("Registro almacenado en vector :");     
+           System.exit(0);//Limpiar memoria
+           
+               
+            
+            }
+        
+            
+        }
+             
+
+            private static void ingresarDatos () 
+           {
+               
+           }
+            
+            
+           
+            private static void editarDatos () 
+           {
+             int codigo=0, pos= -1, accion =0;
+               System.out.println("CODIGO.....");codigo=lector.nextInt();
+               pos = buscarDatos(codigo);
+               
+               if(pos>=0){
+                   System.out.println("datos encontrados");
+                   System.out.println(producto[pos].toString());
+                   System.out.println("1:Modifica/2:Elimina datos : ");
+                   accion = lector.nextInt();
+                   switch(accion)
+                   {
+                       case 1: modificarDatos(pos);
+                   }
+               }
+               
+           }
+               
+           
+            
+            
+            
+           private static void buscarDatos (int codigo) 
+           {
+               for(int i= 0; i<cont; i++){
+                   if(producto[i].getCodigo()== codigo){
+                      pos = i;
+                      System.out.println();
+                    }
+               }
+           }
+           
+           
+           private static void listarDatos () 
+           {
+               for(int i= 0; i<cont; i++){
+                   System.out.println("DATOS :" + producto[i].toString);
+               }
+               
+           }
+           
+           
+           
+           private static void modificarDatos (int pos) 
+           {
+             String descrip=null; 
+             int precio=0,modi=0;
+               System.out.println("1:Descripcion/2:Precio : ");
+               modi=lector.nextInt();
+               switch(modi)
+               { case 1: System.out.println("Ingrese Descripcion");
+                         descrip=lector.next();
+                         producto[pos].setDescrip(descrip);break;
+                         
+                case 2: System.out.println("Ingrese Nuevo precio");
+                         precio=lector.nextInt();
+                         producto[pos].setCosto(cont);break;
+                         
+                default:System.out.println("Mala seleccion");         
+                         
+               }
+               
+  
+                   
+               }
+             
+           
+           
+           
+           
+           
+           
+            private static void eliminarDatos (int pos) 
+           {
+             for(int i = pos; i<cont-1; i++){
+                 productos[i] = producto[i+1];
+                 
+             }   
+             // restar un registro
+             cont--;
+             
+           }
+               
+           
+                     
+            
+                
+        }
+   
+
+    
+______________________________________________________________________________________
+
