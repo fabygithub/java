@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class ControlProducto {
 static Scanner lector=new Scanner(System.in);    
 static Producto producto[]= null; 
-int cont;
+static int cont;
 
     public static void main(String[] args) {
     
@@ -19,33 +19,38 @@ int cont;
         producto=new Producto[3];
         int op=0;
         do{
-            System.out.println("MENU DE CONTROL");
-            System.out.println("MENU DE CONTROL");
-            System.out.println("MENU DE CONTROL");
-            System.out.println("MENU DE CONTROL");
-            System.out.println("MENU DE CONTROL");
-            System.out.println("MENU DE CONTROL");
-            System.out.println("SELECCIONE OPCION:");
+            System.out.println("Menu de control");
+            System.out.println("===============");
+            System.out.println("1- ingresar datos");
+            System.out.println("2- editar datos");
+            System.out.println("3- listar datos");
+            System.out.println("4- Salir sistema");
+            System.out.println("Seleccione una opcion");
             
-            
-            op=4;
-            
+            //op=4;
+            op=lector.nextInt();
             switch(op){
                 
             
-            case 1:ingresarDatos(); break;
+            case 1 :if(cont<3)ingresarDatos();
+            else System.out.println("buffer limite no mas dato");
+            
+            break;
             case 2:editarDatos();break;
             
+            case 3:listarDatos();break;
+            
+           
             case 4:System.out.println("Saliendo de Aplicacion");
                    break;
+                   
+                   
             default:System.out.println("Opciones   1/2/3/4....");
             
-            System.out.println("CODIGO........:");codigo=lector.nextInt();
-            System.out.println("DESCRIPCION :");descrip=lector.next();
-            System.out.println("COSTO.....:");costo=lector.nextInt();
+         
             
             }
-            
+             }while(op!=4);
    
             
            System.out.println("Registro almacenado en vector :");     
@@ -53,7 +58,7 @@ int cont;
            
                
             
-            }
+           
         
             
         }
@@ -61,6 +66,13 @@ int cont;
 
             private static void ingresarDatos () 
            {
+               
+            int codigo,costo;
+            String descrip;
+               
+            System.out.println("CODIGO........:");codigo=lector.nextInt();
+            System.out.println("DESCRIPCION :");descrip=lector.next();
+            System.out.println("COSTO.....:");costo=lector.nextInt();
                
            }
             
@@ -156,6 +168,9 @@ int cont;
                 
         }
    
+
+    
+
 
     
 ______________________________________________________________________________________
