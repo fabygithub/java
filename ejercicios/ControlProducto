@@ -160,3 +160,61 @@ int cont;
     
 ______________________________________________________________________________________
 
+
+package Vista;
+
+import Modelo.Producto;
+import java.util.Scanner;
+
+
+public class ControlProducto {
+   
+    static Producto producto[]=null; //DECLARACION VECTORIAL
+    static int cont=0;
+            static Scanner lector=new Scanner (System.in);
+            public static void main(String[] args) {
+               
+            producto=new Producto[3];//
+        int op=0;
+        do{
+            System.out.println("Menu de control");
+            System.out.println("===============");
+            System.out.println("1- ingresar datos");
+            System.out.println("2- editar datos");
+            System.out.println("3- listar datos");
+            System.out.println("4- Salir sistema");
+            System.out.println("Seleccione una opcion");
+           
+            op=lector.nextInt();
+            switch(op)
+            { case 1:if(cont<3)IngresarDatos();
+            else System.out.println("buffer limite, no mas dato");
+            break;
+              case 2:EditarDatos();break;
+              case 3:ListarDatos();break;
+              case 4:System.out.println("Saliendo Aplicacion");break;
+              default:System.out.println("Opcion 1/2/3/4");
+             
+             
+           
+            }
+        }while(op!=4);
+        System.exit(0);//Limpiar memoria
+    }
+
+    private static void IngresarDatos() {
+    int codigo;
+    String descrip;
+    int costo;
+        System.out.println("Codigo");codigo=lector.nextInt();
+        System.out.println("Descripcion");descrip=lector.next();
+        System.out.println("Costo..");costo=lector.nextInt();
+        producto[cont]=new Producto(codigo,descrip,costo);
+        cont++;//
+        System.out.println("Registo almacenado vector :"+cont);
+    }
+
+
+___________________________________________________________________________________________________________
+
+
