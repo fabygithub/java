@@ -1,0 +1,77 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */ 
+package tarean1;
+
+//Iván Luis Jiménez
+public class Productos1 {
+    private String nombre;
+    private float precio;
+    private String descripcion;
+    
+    
+    public static void main(String[]args){
+        Productos1 pro = new Productos1();
+        pro.setNombre("pala");
+        pro.setPrecio(1);
+        pro.setDescripcion("buen producto");
+        System.out.println( pro.toString());
+        
+    }
+    
+    
+    
+    
+    public Productos1(){
+        
+    }
+    
+    public Productos1(String nombre, float precio, String descripcion){
+        this.nombre = nombre;
+        this.precio = precio;
+        this.descripcion = descripcion;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public float getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(float precio) {
+        this.precio = precio;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    @Override
+    public String toString() {
+        return "Productos{" + "nombre=" + nombre + ", precio=" + precio + ", descripcion=" + descripcion + '}';
+        
+    }
+    
+    public float calcular(int cantidad_productos){
+        
+        float fin = precio * cantidad_productos;
+        setPrecio(fin);
+        return fin;
+    }
+   
+   
+    
+}
+
