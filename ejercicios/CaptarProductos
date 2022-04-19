@@ -1,0 +1,172 @@
+package tarean1;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+
+public class CaptarProductos {
+ 
+    /**
+     * Metodo utilizado pare leer Strings
+     *
+     * @param mensaje
+     * @return
+     */
+    public static String leer(String mensaje) {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String s = null;
+        try {
+            System.out.print(mensaje);
+            s = br.readLine();
+        } catch (IOException ex) {
+            System.out.println("Hubo un error de lectura");
+        }
+        if (s == null) {
+            s = leer(mensaje);
+        }
+        return s;
+    }
+ 
+    /**
+     * Metodo utilizado para ller Integers
+     *
+     * @param mensaje
+     * @return
+     */
+    public static Integer leerInt(String mensaje) {
+        Integer i = null;
+        try {
+            i = Integer.parseInt(leer(mensaje));
+        } catch (NumberFormatException ex) {
+            System.out.println("Error de formato, vuelva a intentarlo");
+        }
+        if (i == null) {
+            i = leerInt(mensaje);
+        }
+        return i;
+    }
+ 
+    /**
+     * Metodo utilizado para leer Doubles
+     *
+     * @param mensaje
+     * @return
+     */
+    public static Double leerDouble(String mensaje) {
+        Double i = null;
+        try {
+            i = Double.parseDouble(leer(mensaje));
+        } catch (NumberFormatException ex) {
+            System.out.println("Error de formato, vuelva a intentarlo");
+        }
+        if (i == null) {
+            i = leerDouble(mensaje);
+        }
+        return i;
+    }
+ 
+    public static void main(String[] args) {
+        List<Producto> productos = new ArrayList();
+        String nombre;
+        double precio;
+        int stock;
+        Producto menorPrecio = null;
+        Producto mayorPrecio = null;
+        double totalFactura = 0;
+        while (true) {
+            nombre = leer("Introduzca el nombre: ");
+            if (nombre.equals("0")) {
+                break;
+            } else {
+                precio = leerDouble("Introduzca el precio: ");
+                stock = leerInt("Introduzca el stock: ");
+                Producto p = new Producto(nombre, precio, stock);
+                if (productos.isEmpty()) {
+                    menorPrecio = new Producto(nombre, precio, stock);
+                    mayorPrecio = new Producto(nombre, precio, stock);
+                } else {
+                    if (menorPrecio != null && precio < menorPrecio.getPrecio()) {
+                        menorPrecio = new Producto(nombre, precio, stock);
+                    }
+                    if (mayorPrecio != null && precio > mayorPrecio.getPrecio()) {
+                        mayorPrecio = new Producto(nombre, precio, stock);
+                    }
+ 
+                }
+                totalFactura += p.getPrecio();
+                productos.add(p);
+            }
+        }
+        System.out.println("Se ingresaron " + productos.size() + " productos."
+                + "\nEl total de la factura es: " + totalFactura
+                + "\n\nEl producto con mayor precio es: \n" + mayorPrecio
+                + "\n\nEl producto con menor precio es: \n" + menorPrecio
+                + "\n\nA continuación los productos ingresados:");
+        productos.forEach(System.out::println);
+ 
+    }
+}
+ 
+class Producto {
+ 
+    private String nombre;
+    private double precio;
+    private int stock;
+ 
+    public Producto(String nombre, double precio, int stock) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.stock = stock;
+    }
+ 
+    @Override
+    public String toString() {
+        return "Nombre: " + nombre + "\nPrecio: " + precio + "\nStock: " + stock;
+    }
+ 
+    /**
+     * @return the nombre
+     */
+    public String getNombre() {
+        return nombre;
+    }
+ 
+    /**
+     * @param nombre the nombre to set
+     */
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+ 
+    /**
+     * @return the precio
+     */
+    public double getPrecio() {
+        return precio;
+    }
+ 
+    /**
+     * @param precio the precio to set
+     */
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+ 
+    /**
+     * @return the stock
+     */
+    public int getStock() {
+        return stock;
+    }
+ 
+    /**
+     * @param stock the stock to set
+     */
+    public void setStock(int stock) {
+        this.stock = stock;
+    }
+ 
+}
+
