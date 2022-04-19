@@ -1,8 +1,8 @@
-package com.edu4java.tutorial7;
+package tarean1; 
 
 import java.util.Scanner;
 
-public class Tutorial7 {
+public class Switch1 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Menú de opciones");
@@ -41,3 +41,4 @@ public class Tutorial7 {
 		System.out.println(resultado);
 	}
 }
+
