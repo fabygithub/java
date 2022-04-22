@@ -8,3 +8,92 @@ selenium-java Copia el
  siguiente código en tu clase.
 
  https://learntutorials.net/es/selenium/topic/10012/primer-proyecto-en-selenio-con-java-
+ 
+ Selenium se extrae en una carpeta
+ 
+ Haga clic en "Nuevo proyecto" .
+Elija la aplicación Java <"Hello World"
+Escriba el nombre del proyecto y créelo.
+
+File < Project Structure < Modules < Dependencies
+
+icono más ( + ) verde 
+ carpeta de Selenium extraída
+ localice la carpeta libs de Selenium 
+ 
+ Copia el siguiente código en tu clase.
+
+public static void main(String[] args) {
+    System.setProperty("webdriver.chrome.driver", "path of the exe file\\chromedriver.exe");
+}
+
+public static void main(String[] args) throws InterruptedException {
+    System.setProperty("webdriver.chrome.driver", "path of the exe file\\chromedriver.exe");
+    WebDriver driver = new ChromeDriver();
+    driver.get("https:www.google.com");
+    Thread.sleep(3000); //wait for 3 seconds
+    driver.quit();      //close Chrome
+}
+
+driver.quit() cierra el navegador. Para crear un retraso, usamos Thread.sleep(3000) .
+Cada elemento HTML en Selenium se llama WebElement
+una etiqueta p sería un WebElement
+
+<a id="link1" href="https://www.google.com">google</a>
+<p class="p1">
+This is a paragraph
+</p>
+
+Ahora, si quisiéramos obtener a etiqueta, podríamos hacer
+
+WebElement link = driver.findElement(By.id("link1"));
+
+Veamos otro ejemplo. Si quisiéramos el texto de la etiqueta p , es decir , " Esto es un párrafo ", podemos hacer
+
+WebElement p = driver.findElement(By.className("p1"));
+System.out.println(p.getText());
+
+También podemos obtener elementos por etiquetas, como
+
+WebElement tag = driver.findElement(By.tagName("a"));
+conceptos básicos de Selenium
+
+public static void main(String[] args) throws InterruptedException {
+    System.setProperty("webdriver.chrome.driver", "path of the exe file\\chromedriver.exe");
+    WebDriver driver = new ChromeDriver();
+    driver.get("https:stackoverflow.com");
+    Thread.sleep(3000);
+    driver.quit();
+}
+
+son a etiquetas, con un className de question-hyperlink
+utilizamos una List de WebElement 
+
+public static void main(String[] args) throws InterruptedException {
+    System.setProperty("webdriver.chrome.driver", "path to chromedriver\\chromedriver.exe");
+    WebDriver driver = new ChromeDriver();
+    driver.get("https:stackoverflow.com");
+    List<WebElement> list = driver.findElements(By.className("question-hyperlink"));
+}
+
+Ahora, tenemos que conseguir el href atributo de la a etiqueta
+ Para hacer esto, podemos usar getAttribute("href") 
+ WebElement , como
+
+public static void main(String[] args) throws InterruptedException {
+    System.setProperty("webdriver.chrome.driver", "path to chromedriver\\chromedriver.exe");
+    WebDriver driver = new ChromeDriver();
+    driver.get("https:stackoverflow.com");
+    List<WebElement> list = driver.findElements(By.className("question-hyperlink"));
+    System.out.println(list.size());
+    list.forEach(e->System.out.println(e.getAttribute("href")));
+    driver.quit();
+}
+
+<a id="click" href="https://www.google.com">
+Podemos encontrar el atributo href del elemento por
+
+WebElement e = driver.findElement(By.id("click"));
+System.out.println(e.getAttribute("href")); //prints https://www.google.com
+
+
