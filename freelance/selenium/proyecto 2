@@ -76,4 +76,40 @@ by right-clicking on the ‘src’ folder
 Once the package is created, 
 right-click on the package and create a class. 
 
+Once the class is created, 
+go ahead with adding the Selenium Jars 
+to the project.
+
+To add the Selenium Jars, 
+right-click on the project folder 
+and go to Properties:
+
+From the Properties window,
+navigate to ‘Java Build Path’ 
+and click on ‘Add External JAR’s
+
+Add the downloaded Selenium Jars 
+and click on ‘Apply and Close.’ 
+Selenium with Eclipse is configured now. 
+Now Eclipse is ready to execute the first script.
+
+Step #5 – Creating and Running 
+the first test using Selenium and Java
+
+As the first test, 
+we will write a script to open ‘google.com’ 
+on the Chrome browser. 
+
+To use Chrome, 
+it is mandatory to have the driver executable.
+To download the driver executable, 
+visit the Selenium website. 
+In the third-party driver browser section, 
+one can download the executable file for a specific browser.
+
+Post downloading,
+below is the code snippet 
+to run the first test
+using Selenium and Java:
+
 
