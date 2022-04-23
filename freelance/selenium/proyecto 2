@@ -1,3 +1,5 @@
+ https://www.browserstack.com/guide/selenium-with-java-for-automated-test
+ 
  automate the testing of web applications.
  good community of developers
  Selenium supports Java.
@@ -9,3 +11,66 @@
  Eclipse IDE.
  typing java -version
  
+Step #2 – Install Eclipse
+
+Eclipse is a platform for Java developers 
+to write their code and run it. 
+Download Eclipse from their office page. 
+
+Based on the OS, one can go with the required option. 
+Once downloaded, extract the downloaded file. 
+Once completed, one can see the eclipse .exe 
+in the eclipse folder:
+
+Step #3 – Selenium Client and WebDriver Language Bindings
+
+Selenium Webdriver 
+supports multiple languages, 
+and each language has its client driver. 
+As we are using Selenium with Java, 
+we need to have ‘Selenium Java Client Driver’.
+One can download the client driver
+from the official Selenium website.
+One can see the multiple language
+client drivers provided by Selenium:
+
+Once downloaded,
+extract the contents 
+of the downloaded file and 
+then move to the next step, 
+which is
+configuring Selenium Webdriver 
+with Eclipse.
+
+
+Step #4 – Configuring Selenium WebDriver With Eclipse
+This is a vital step 
+of starting with Selenium. 
+To configure Eclipse with 
+Selenium Webdriver client,
+
+Double click on the eclipse.exe 
+file to launch it
+Create a workspace
+
+Think of it just 
+like any other folder
+
+which stores 
+all the scripts
+in one place. 
+
+One can choose 
+to create as many
+workspaces as required.
+
+Click on Launch to launch the workspace.
+Create a new java 
+project by clicking on 
+File-> New-> Java Project 
+and name the project
+
+Create a package under this project, 
+by right-clicking on the ‘src’ folder
+
+
