@@ -3,8 +3,17 @@ how to build a Warehouse Control System
 Warehouse Control System java
 https://github.com/yeseni-today/warehouse-management-system
 
-Gradle helps teams build, automate and deliver better software, faster.
+Gradle 
+
+helps teams build, automate and deliver better software, faster.
 Build Anything
 
- The Wrapper is a script that invokes a declared version of Gradle, downloading it beforehand if necessary
+!gradle/wrapper/gradle-wrapper.jar
+ 
+ is a script that invokes a declared version of Gradle, downloading it beforehand if necessary
+ 
+ gradlew. bat 
+ 
+ its a batch file used on Windows. You can even open it with a notepad to view the instructions in it
+ 
  
