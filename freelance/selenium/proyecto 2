@@ -1,1 +1,11 @@
-
+ automate the testing of web applications.
+ good community of developers
+ Selenium supports Java.
+ is compatible with multiple operating systems like Windows, Linux, Solaris, Macintosh
+ 
+ Step #1 – Install Java
+ is required to write and run Java programs.
+ need the dependency of Java, one needs to install JDK.
+ Eclipse IDE.
+ typing java -version
+ 
