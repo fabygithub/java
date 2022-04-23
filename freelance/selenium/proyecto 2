@@ -73,4 +73,7 @@ and name the project
 Create a package under this project, 
 by right-clicking on the ‘src’ folder
 
+Once the package is created, 
+right-click on the package and create a class. 
+
 
