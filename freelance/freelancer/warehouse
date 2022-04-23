@@ -8,6 +8,45 @@ Gradle
 helps teams build, automate and deliver better software, faster.
 Build Anything
 
+Accelerate developer productivity
+From mobile apps to microservices
+from small startups 
+to big enterprises
+Gradle helps teams build
+automate and deliver 
+better software, faster
+
+Write in Java, 
+C++ Python 
+or your language of choice.
+Package for deployment 
+on any platform.
+Go monorepo or multi-repo.
+And rely on Gradle's 
+unparalleled versatility 
+to build it all.
+
+Use Gradle's rich API 
+and mature ecosystem 
+of plugins and integrations 
+to get ambitious about automation.
+Model, integrate and systematize
+the delivery of your software
+from end to end.
+
+Scale out development with elegant, 
+blazing-fast builds. 
+From compile avoidance to 
+advanced caching and beyond, 
+we pursue performance relentlessly s
+o your team can deliver continuously.
+
+Trusted by millions of developers
+Gradle has been counted 
+in the top 20 open-source projects 
+and is trusted by millions of developers 
+to build software for billions of people.
+
 !gradle/wrapper/gradle-wrapper.jar
  
  is a script that invokes a declared version of Gradle, downloading it beforehand if necessary
@@ -16,4 +55,8 @@ Build Anything
  
  its a batch file used on Windows. You can even open it with a notepad to view the instructions in it
  
- 
+ ### STS
+
+using Spring Tool Suite (STS)
+import it into Spring Tool Suite
+
