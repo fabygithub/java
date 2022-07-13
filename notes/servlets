@@ -1,0 +1,36 @@
+new
+new dinamic web project
+name project
+target runtime apache tomcat v8.0
+
+new 
+servlet
+package name aservlet
+class name  Aservlet
+
+next
+check dopost doget
+finish
+
+extends httpservlet
+
+doget   request response
+
+servletExpection
+
+response.getwriter 
+append server at
+
+getcontextPath
+
+
+pasos
+
+1  creacion de clase que herede HttpServlet
+   doget recive la peticion request
+   
+3  
+
+4
+
+5
