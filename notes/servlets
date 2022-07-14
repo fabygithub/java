@@ -43,3 +43,34 @@ import PrintWriter
 
 import data java.util
 
+run on server
+
+[Solved] HttpServlet cannot be resolved to a type
+
+java build path
+add library
+
+java web project
+properties
+libraries
+add library
+server runtime
+apache tomcat v10
+
+apply and close
+
+maven
+add aartifact
+
+crear el server en webapp
+
+always use this server to run this project
+
+The server may already be running in another process
+
+To start this server you will need to stop the other process or change the port number(s).
+
+run as 
+run on server
+
+http://localhost:8080/test/test
