@@ -1,3 +1,24 @@
 actionlistener
 addactionlistener
 java mvc
+metodos estructura de una clase
+los metodos nos permiten ver como usar los objetos de una clase
+la definicion de un metodo se divide en cuerpo y cabecera
+public es un modificador de acceso
+el cuerpo de un metodo esta delimitado por llaves
+el cuerpo de un metodo define su implementacion
+metodos con el mismo nombre : sobrecarga
+los parametros definidos en la cabecera son los parametros formales
+cuando un metodo devuelve un resultado : debe terminar con un return
+en los constructores se utiliza el operador: this
+gracias a la herencia podemos crear componentes reutilizables
+un constructor copia recibe : un objeto de la misma clase como parametro
+los metodos estaticos pertenecen a la clase
+no es aconsable variables estaticas salvo : para las constantes
+
+
+
+
+
+
+
