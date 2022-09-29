@@ -29,6 +29,13 @@ v.jTextField2.setText(String.valueOf("3"));
 Convierte la fracción a decimal mediante la división del numerador por el denominador.
 0.03
 
+double imc = peso +(peso*altura/100);
+altura=Double.parseDouble(v.jTextField2.getText());
+
+
+
+
+
 
 
 
