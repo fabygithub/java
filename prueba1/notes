@@ -17,6 +17,11 @@ los metodos estaticos pertenecen a la clase
 no es aconsable variables estaticas salvo : para las constantes
 
 
+29-09-2022
+
+altura=Double.parseDouble("3"); 
+he method parseDouble(String) in the type Double is not applicable
+altura=3;
 
 
 
