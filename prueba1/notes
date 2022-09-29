@@ -23,6 +23,11 @@ altura=Double.parseDouble("3");
 he method parseDouble(String) in the type Double is not applicable
 altura=3;
 
+v.jTextField2.setText(String.valueOf("3"));
+
+3/100
+Convierte la fracción a decimal mediante la división del numerador por el denominador.
+0.03
 
 
 
