@@ -33,6 +33,16 @@ double imc = peso +(peso*altura/100);
 altura=Double.parseDouble(v.jTextField2.getText());
 
 
+public void setCantidad(double c){
+        this.cantidad=c;
+    }
+    public double getCantidad(){
+        return cantidad;
+    }
+    
+    
+cantidad=Double.parseDouble(v.jTextField4.getText());
+ 
 
 
 
