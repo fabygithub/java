@@ -1,0 +1,10 @@
+La primera palabra nos proporciona 
+la posibilidad de dar permisos de accesos a nuestra clase
+los permisos son los siguientes: 
+"Public": Una clase "public" 
+es accesible desde cualquier otra clase 
+no obstante para que esto suceda 
+debe ser primero accesible el "package" 
+de esa clase "public".
+
+
