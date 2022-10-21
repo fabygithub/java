@@ -1,0 +1,11 @@
+void//La palabra void indica que el método main 
+no retorna ningún valor. 
+La forma (String args[]) es la definición de los argumentos 
+que recibe el método main. 
+En este caso se recibe un argumento. 
+Los paréntesis [] 
+indican que el argumentos es un arreglo 
+y la palabra String es el 
+tipo de los elementos del arreglo.
+
+
