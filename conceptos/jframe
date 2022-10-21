@@ -1,0 +1,13 @@
+jframe//es una clase utilizada en Swing (biblioteca gráfica) 
+para generar ventanas sobre las cuales 
+añadir distintos objetos 
+con los que podrá interactuar o no el usuario. 
+A diferencia de JPanel, 
+JFrame posee algunas nociones típicas de una ventana 
+como 
+minimizar
+cerrar
+maximizar 
+moverla.
+
+
