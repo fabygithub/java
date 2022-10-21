@@ -1,0 +1,9 @@
+initcomponents //El método initComponents, 
+método que es llamado por el constructor, 
+donde se inicializan todos los componentes gráficos. 
+Ambos representan distintas maneras de armar una interfaz grafica. 
+AWT es el primer framework de Java 
+para construcción grafica y luego nace Swing.
+
+
+
