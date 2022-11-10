@@ -7,3 +7,7 @@ arrastrar la carpeta
 y copiarla en netbeans
 en el modelo : todos los tipos de dinero ejemplo dolar euro peso etc
 
+en vez de moneda se llamara cuenta
+en vez de monedas se llamara cuentas
+
+formMonedas.java es la primera pantalla
