@@ -11,3 +11,32 @@ en vez de moneda se llamara cuenta
 en vez de monedas se llamara cuentas
 
 formMonedas.java es la primera pantalla
+cambiar los nombres de los labels y los botones
+rut 
+saldo 
+saldo con interes
+
+cambiar los nombres de la vista
+formcuentaA
+formcuentaB
+
+cambiar los nombres del modelo
+moneda => Cuenta
+dolar => CuentaA
+
+ejecutar queda igual
+
+modelo : modificar los metodos que van adentro
+public double valor(){
+}
+
+valor = cantidad+cantidad*6/100;
+valor = cantidad+cantidad*7/100; 
+
+
+
+
+
+
+
+
