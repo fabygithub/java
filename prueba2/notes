@@ -33,6 +33,8 @@ public double valor(){
 valor = cantidad+cantidad*6/100;
 valor = cantidad+cantidad*7/100; 
 
+15-11-2022
+
 
 
 
