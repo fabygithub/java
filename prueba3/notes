@@ -72,6 +72,11 @@ http://localhost/phpmyadmin/
 y hay que crear las tablas
 
 min 10
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'
+SELECT * FROM `productofresco`;
+verificar que la conexion este bien escrita
+sin faltas de sintaxis
+
 
 
 
