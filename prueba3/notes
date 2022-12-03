@@ -14,3 +14,69 @@ hacer el mvc
 ingresar formulario
 agregar cosas al formulario no borrar
 el nuevo archivo se pone en naranjo
+
+
+02-12-2022
+open project
+close project
+
+terminar una parte
+seguir a la otra
+netbeans jframe phpmyadmin 
+Insert, update, delete in MySql Database, using Netbeans, JFrame, Xampp | 2021
+
+https://www.youtube.com/watch?v=RqoK1j2Oxu0&ab_channel=ImaginaryEngineering
+
+ingresar   = insert
+modificar  = update
+eliminar   = delete
+ver el ejemplo y adaptarlo
+se crea un Jframe y se agregan los textos botones etc
+copiar y pegar
+libraries
+add jar = mysqlconnector
+cuando se agrega el connector
+no es enter
+son 2 clics
+https://dev.mysql.com/downloads/connector/j/
+Connector/J 8.0.31
+No thanks, just start my download.
+download log = es como la secuencia de la instalacion paso a paso
+revisar el install path
+
+se necesita este metodo para el boton
+private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+    }  
+    
+ahora los resultados de la cajas de texto hay que guardarlos en 1 variable
+String fechacaducidad = jTextField1.getText();
+
+ahora hay que agregar la conexion a mysql
+se agregar una expecion para que el programa no se caiga
+si no logra la conexion
+pasa al catch a la excepcion
+
+se necesitan importar varios paquetes sql
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.sql.ResultSet;
+
+para lograr la conexion a base de datos 
+tiene que estar creada la base primero en phpmyadmin
+http://localhost/phpmyadmin/
+
+y hay que crear las tablas
+
+min 10
+
+
+
+
+
+
+
+
