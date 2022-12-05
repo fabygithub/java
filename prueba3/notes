@@ -77,7 +77,13 @@ SELECT * FROM `productofresco`;
 verificar que la conexion este bien escrita
 sin faltas de sintaxis
 
-
+03-12-2022
+en mvc si el controlador no esta activado no funciona el programa
+modelo 
+vista
+controlador 
+tienen que conectarse
+Generar diagrama entidad relación de una base de datos MySQL Workbench
 
 
 
