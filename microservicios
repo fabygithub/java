@@ -1,0 +1,153 @@
+eclipe
+new
+other
+spring starter project
+name : usuario-service
+crear carpeta : microservicios-tutorial
+desmarcar use default destination
+microservicios-tutorial
+C:\Users\USUARIO\Desktop\fabi\cursos\microservicios-tutorial
+se agrega el nombre
+C:\Users\USUARIO\Desktop\fabi\cursos\microservicios-tutorial\usuario-service
+Group : usuario-service
+Artifact : usuario-service
+Version : 1.0
+Description : 
+package : com.usuario.service
+next
+dependencies
+Spring Boot Version 2.6.6
+Spring Boot DevTools
+Spring Dara JPA
+H2 Database
+Spring Web
+finish
+com.usuario.service
+new package
+com.usuario.service.entidades
+new class Usuario
+
+package com.usuario.service.entidades;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenetationType;
+
+
+@entity
+public class Usuario{
+
+@Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+private int id;
+private String nombre;
+private String email;
+
+click derecho
+source
+generate getters and setters
+select all
+
+generated
+
+generar constructor vacio
+
+seleccionar todo el codigo
+source
+format
+
+}
+
+
+com.usuario.service
+new package
+com.usuario.service.repositorio
+new class 
+UsuarioRepository
+
+cambiar de class a interface
+
+
+package com.usuario.service.repositorio
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import com.usuario.service.entidades.Usuario;
+
+@Repository
+public interface UsuarioRepository extends JpaRepository<Usuario,Integer>{
+
+}
+
+
+com.usuario.service
+new package
+com.usuario.service.servicios
+
+@Service
+public class UsuarioService{
+ @Autowired
+ private UsuarioRepositoty usuarioRepository;
+ 
+ public List<Usuario> getAll(){
+ return usuarioRepository.findAll();
+ 
+ }
+ 
+public Usuario getUsuarioById(int id){
+ return usuarioRepository.findById(id).orElse(null);
+}
+
+public Usuario save(Usuario usuario){
+ Usuario nuevoUsuario = usuarioRepository.save(Usuario);
+ return nuevoUsuario;
+}
+ 
+}
+
+
+com.usuario.service
+new package
+com.usuario.service.controlador
+new class 
+UsuarioController
+
+package com.usuario.service.controlador;
+
+
+@RestController
+@RequestMapping("/usuario")
+public class Usuario Controller{
+ 
+ @Autowired
+ private UsuarioService usuarioService;
+ 
+ @GetMapping
+
+}
+
+
+20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
