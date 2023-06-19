@@ -1,0 +1,29 @@
+git client for windows
+
+git --version
+git --help
+git config --global user.name "fabygithub"
+git config --list
+clear
+pwd
+/c/Users/anandr72
+mkdir Git_Demo
+rm -Rf Git_Demo
+cd Git_Demo/
+clear
+pwd
+/c/Users/anandr72/Git_Demo
+mkdir FirstRepo
+cd FirstRepo/
+pwd
+/c/Users/anandr72/Git_Demo/FirstRepo
+git init
+clear
+touch master.txt
+notepad master.txt
+This is my file!!
+git status
+untracked files master.txt
+
+20 minutos
+
