@@ -113,8 +113,146 @@ public class Usuario Controller{
  private UsuarioService usuarioService;
  
  @GetMapping
+ public ResponseEntity<List<Usuario>> listarUsuarios()
+   List<Usuario> usuarios = usuarioService.getAll();
+    if(usuarios.isEmpty)()){
+       return ResponseEntity.noContent().build();  
+    }
+       return ResponseEntity.ok(usuarios);
 
+ }
+
+public ResponseEntity.ok<Usuario> obtenerUsuario(@PathVariable("id")int id){
+ Usuario usuario  = usuarioService.getUsuarioById(id);
+  if(usuario == null){
+     return ResponseEntity.notFound().build();
+     
+  }
+  return ResponseEntity.ok(usuario)
+  
 }
+@PostMapping
+public ResponseEntity<Usuario> guardarUsuario(@RequestBody Usuario usuario){
+ Usuario nuevoUsuario = usuarioService.save(usuario);
+ return ResponseEntity.ok(nuevoUsuario)
+ 
+}
+}
+
+run as spring boot app
+postman
++
+get http://localhost:8080/usuario
+post http://localhost:8080/usuario
+body
+json
+
+{
+"nombre" : "Christian"
+"email"  : "c1@gmail.com"
+}
+
+(agregar varios nombre)
+
+"nombre" : "Gabriel"
+"email"  : "g1@gmail.com"
+
+"nombre" : "Julen"
+"email"  : "j1@gmail.com"
+
+"nombre" : "Biaggio"
+"email"  : "b1@gmail.com"
+
+send
+
+get http://localhost:8080/usuario/2
+get http://localhost:8080/usuario/10
+
+(creacion de microservicios)
+new spring starter project
+
+name : carro-service
+group : carro-service
+package : com.carro.service
+
+descripcion (vacio)
+no usar ruta por defecto 
+carpeta microservicios-tutorial
+C:\Users\USUARIO\Desktop\fabi\cursos\microservicios-tutorial\carro-service
+
+dependencias
+
+spring web
+spring boot devtools
+h2 database
+spring data jpa
+
+finish
+
+com.carro.service 
+nuevo packete
+com.carro.service.entidades
+nueva clase
+Carro
+
+@Entity
+clase
+
+@Id
+@GeneratedValue(Strategy = GenerationType.IDENTITY)
+private int id;
+private String marca;
+private String modelo;
+private int usuarioId;
+
+souce
+generar get and set
+agregar un constructor vacio
+
+seleccionar todo 
+formatear
+
+application.properties
+server.port=8081
+spring.application.name=usuario-service
+
+
+nuevo packete
+com.carro.service.repositorio
+interfaz
+CarroRepository extends JpaRepository<Carro,Integer>{
+List<Carro> findByUsuario(int usuarioId);
+}
+
+com.carro.service.servicios
+
+clase
+CarroService
+
+@Autowired
+private CarroRepository carroRepository;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 20
