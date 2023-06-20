@@ -14,6 +14,8 @@ Artifact : usuario-service
 Version : 1.0
 Description : 
 package : com.usuario.service
+
+
 next
 dependencies
 Spring Boot Version 2.6.6
@@ -22,20 +24,15 @@ Spring Dara JPA
 H2 Database
 Spring Web
 finish
+
+
 com.usuario.service
 new package
 com.usuario.service.entidades
 new class Usuario
 
-package com.usuario.service.entidades;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenetationType;
-
-
-@entity
+@Entity
 public class Usuario{
 
 @Id
@@ -48,7 +45,6 @@ click derecho
 source
 generate getters and setters
 select all
-
 generated
 
 generar constructor vacio
@@ -65,14 +61,8 @@ new package
 com.usuario.service.repositorio
 new class 
 UsuarioRepository
-
 cambiar de class a interface
 
-
-package com.usuario.service.repositorio
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-import com.usuario.service.entidades.Usuario;
 
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario,Integer>{
