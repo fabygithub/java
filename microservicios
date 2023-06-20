@@ -79,17 +79,17 @@ public class UsuarioService{
  @Autowired
  private UsuarioRepositoty usuarioRepository;
  
- public List<Usuario> getAll(){
+ private List<Usuario> getAll(){
  return usuarioRepository.findAll();
  
  }
  
-public Usuario getUsuarioById(int id){
+private Usuario getUsuarioById(int id){
  return usuarioRepository.findById(id).orElse(null);
 }
 
-public Usuario save(Usuario usuario){
- Usuario nuevoUsuario = usuarioRepository.save(Usuario);
+private Usuario save(Usuario usuario){
+ Usuario nuevoUsuario = usuarioRepository.save(usuario);
  return nuevoUsuario;
 }
  
