@@ -26,4 +26,173 @@ git status
 untracked files master.txt
 
 20 minutos
+clear
+git add .
+git status
+no commits yet
+clear
+git commit -m "This is my First Git Commit"
+1 file changed
+git status
+nothing to commit working tree clean
+git log
+commit 131bdad2cbcddb
+clear
+touch master1.txt
+notepad master1.txt
+This is the second file!!
+notepad master.txt
+Making some changes to it!!
+git status
+changes not staged to commit
+clear
+git add .
+git status
+changes to be commited
+git commit -m "This is my Second Commit"
+2 file changed, 4 insertions
+clear
+git log
+commit 7259f7cba
+clear
+github
+new repository
+FirstRepo
+This is my First Github Repository on the Server
+public
+git remote add origin https://github.com/simplilearn-github/FirstRepo.git
+git remote -v
+fetch
+push
+git push -u origin master
+login
+username or email 
+Password
+enumetating objects 7, done.
+refresh page github
+master.txt
+master1.txt
+click 2 commits
+131bdad
+click
+ver el cambio
+ssh-keygen -t rsa -C sandeep.d@simplilearn.net  (el correo)
+Generating public/private rsa key pair
+enter passphrase : empty (enter)
+passphrase : enter again
+the key randomart image is
+create particular folder ssh key
+/c/Users/
+id_rsa
+id_rsa.pub copy the las clave
+github
+settings
+SSH and GPG keys
+New SSH key
+key
+pegar la clave
+Add SSH Key
+password
+confirm
+clear
+ssh -T git@github.com
+yes
+enter phrase : empty
+you've successfully authenticated
+new repository
+SecondRepo
+description : this is my second repository  that is created straigth on the github server (se agrega al readme)
+public 
+initialize repository with a readme
+create repository
+clone with ssh
+copy url
+pwd
+/c/users/anadr72/git_demo
+ls
+FirstRepo/
+clear
+git clone (ssh url)
+enter phrase (empty)
+again(empty)
+receiving objects: 100% 
+ls -ltr
+FirstRepo/
+SecondRepo/
+cd SecondRepo/
+clear
+ls -ltr
+sep 16 readme.md
+notepad second.txt
+this is my second file that i will push on to the server
+git status
+nothin added to commit
+clear
+git add .
+git commit -m "this is my First Commit for the second repo"
+git remote -v
+fetch 
+push
+git push origin master
+enter phrase (empty)
+compresing objects 100%
+github
+secondrepo
+2 commits
+this is my First Commit for the second repo
+initial commit
+9c965b5
+
+40
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
