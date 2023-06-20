@@ -2,7 +2,9 @@ git client for windows
 
 git --version
 git --help
-git config --global user.name "fabygithub"
+git config --global user.name "fabiancornejom"
+git config --global user.email "fabian.cornejo.mella1@gmail.com"
+
 git config --list
 clear
 pwd
@@ -26,6 +28,12 @@ git status
 untracked files master.txt
 
 20 minutos
+
+pwd
+
+git init
+Reinitialized existing Git repository
+
 clear
 git add .
 git status
@@ -36,7 +44,8 @@ git commit -m "This is my First Git Commit"
 git status
 nothing to commit working tree clean
 git log
-commit 131bdad2cbcddb
+commit 131bdad2cbcddb (Head -> master)
+
 clear
 touch master1.txt
 notepad master1.txt
@@ -53,18 +62,22 @@ git commit -m "This is my Second Commit"
 2 file changed, 4 insertions
 clear
 git log
-commit 7259f7cba
-clear
+
+
 github
 new repository
 FirstRepo
 This is my First Github Repository on the Server
 public
-git remote add origin https://github.com/simplilearn-github/FirstRepo.git
+git remote add origin https://github.com/simplilearn-github/FirstRepo.git (url repositorio)
 git remote -v
 fetch
 push
-git push -u origin master
+
+(si no funciona hay que quitar las credendiacles de windows)
+git push -u origin master (aca se creo la rama master)
+(la rama principal es la main)
+
 login
 username or email 
 Password
@@ -72,12 +85,15 @@ enumetating objects 7, done.
 refresh page github
 master.txt
 master1.txt
-click 2 commits
-131bdad
-click
+
+
+click en la descriipcion
 ver el cambio
+
+git bash
 ssh-keygen -t rsa -C sandeep.d@simplilearn.net  (el correo)
 Generating public/private rsa key pair
+enter file (enter)
 enter passphrase : empty (enter)
 passphrase : enter again
 the key randomart image is
@@ -85,6 +101,8 @@ create particular folder ssh key
 /c/Users/
 id_rsa
 id_rsa.pub copy the las clave
+
+
 github
 settings
 SSH and GPG keys
@@ -94,6 +112,7 @@ pegar la clave
 Add SSH Key
 password
 confirm
+
 clear
 ssh -T git@github.com
 yes
@@ -101,12 +120,15 @@ enter phrase : empty
 you've successfully authenticated
 new repository
 SecondRepo
-description : this is my second repository  that is created straigth on the github server (se agrega al readme)
+description : This is my Second Repository  that is created straigth on the Github Server (se agrega al readme)
 public 
 initialize repository with a readme
 create repository
+
+
 clone with ssh
 copy url
+cd..
 pwd
 /c/users/anadr72/git_demo
 ls
@@ -119,21 +141,26 @@ receiving objects: 100%
 ls -ltr
 FirstRepo/
 SecondRepo/
+
+
 cd SecondRepo/
 clear
 ls -ltr
 sep 16 readme.md
 notepad second.txt
-this is my second file that i will push on to the server
+This is my second file that i will push on to the server
 git status
 nothin added to commit
 clear
 git add .
-git commit -m "this is my First Commit for the second repo"
+git commit -m "This is my First Commit for the second repo"
 git remote -v
 fetch 
 push
+
+git checkout -b master (si falla hay que crear la rama master)
 git push origin master
+
 enter phrase (empty)
 compresing objects 100%
 github
@@ -144,43 +171,6 @@ initial commit
 9c965b5
 
 40
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
