@@ -172,6 +172,20 @@ initial commit
 
 40
 
+git log --pretty=oneline
+git reset --soft (codigo c3)
+git log --pretty=oneline
+(codigo c3)head->master
+git stated
+changes commited
+notepad m6.txt
+one new file that was missed out
+git status
+git add .
+
+
+
+
 
 
 
