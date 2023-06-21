@@ -182,7 +182,12 @@ notepad m6.txt
 one new file that was missed out
 git status
 git add .
+git commit -m "c4: re-writing history"
+8 insertions 
+2 deletions
+git log --pretty=oneline
 
+45
 
 
 
