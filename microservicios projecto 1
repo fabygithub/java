@@ -140,6 +140,9 @@ private Usuario save(Usuario usuario){
 }
 
 
+// Learn how to save and update entities to a database using Spring Data CrudRepository.
+// nos sirve para guardar una base de datos
+
 com.usuario.service
 new package
 com.usuario.service.controlador
@@ -150,6 +153,10 @@ package com.usuario.service.controlador;
 
 
 @RestController
+// RestController is basically a meta-annotation that combines @Controller and @ResponseBody 
+// nos sirve para combinar un controlador con una respuesta 
+
+
 @RequestMapping("/usuario")
 public class Usuario Controller{
 
