@@ -12,3 +12,42 @@ spring boot shopping application
 // This project is based on Online Shopping App using Java, Spring, SpringBoot, MySQL and Hibernate.
 // es una aplicacion que usa java, spring,springboot, mysql y hibernate
 
+spring cloud
+// Spring cloud is used for the centralizing the configuration management
+// nos sirve para centralizar la configuracion
+
+product service
+// business models that provide for cohesive delivery of products and services
+// que es un modelo de negocio
+
+product
+// is the item offered for sale
+// es algo para vender
+
+product catalog
+// a type of marketing collateral that lists essential product details that help buyers make a purchase decision
+// es la descripcion de un producto
+
+order service
+// An order product is a product or service that's provided to a customer according to an associated order
+// es un servicio para pedir un producto
+
+inventory service
+// to ensure the business has the stock needed to run smoothly while minimising stock costs
+// no sirve para saber si hay un producto o no hay
+
+notification service
+// A notification service tracks events centrally and informs client applications when an event that is of interest to them occurs
+// le avisa al cliente cualquier movimiento del negocio
+
+structure
+// order service - inventory service - notification service
+// estos 3 servicios interactuan entre ellos
+
+
+
+
+
+
+
+
