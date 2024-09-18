@@ -1,6 +1,4 @@
-eclipe
-new
-other
+eclipe new other
 spring starter project
 name : usuario-service
 crear carpeta : microservicios-tutorial
@@ -43,15 +41,11 @@ private String email;
 
 click derecho
 source
-generate getters and setters
-select all
-generated
+generate getters and setters select all generated
 
 generar constructor vacio
 
-seleccionar todo el codigo
-source
-format
+seleccionar todo el codigo source format
 
 }
 
@@ -74,9 +68,9 @@ com.usuario.service
 new package
 com.usuario.service.servicios
 
-@Service
+@Service // es una anotacion se usa para construir una clase de servicio
 public class UsuarioService{
- @Autowired
+ @Autowired 
  private UsuarioRepositoty usuarioRepository;
  
  private List<Usuario> getAll(){
