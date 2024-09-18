@@ -19,8 +19,8 @@ dependencies
 Spring Boot Version 2.6.6
 Spring Boot DevTools // The spring-boot-devtools module can be included in any project to provide additional development-time features.
 Spring Data JPA // Spring Data JPA, part of the larger Spring Data family, makes it easy to easily implement JPA-based (Java Persistence API) repositories.
-H2 Database // 
-Spring Web // 
+H2 Database // H2 is a relational database management system written in Java
+Spring Web // Spring Web Services (Spring-WS) is focused on creating document-driven Web services
 finish
 
 
