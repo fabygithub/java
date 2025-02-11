@@ -1,2 +1,0 @@
-@SuppressWarnings("unchecked")//Excluir avisos utilizando @SuppressWarnings - IBM
-unchecked para suprimir avisos relativos a operaciones no comprobadas.

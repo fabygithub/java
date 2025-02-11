@@ -1,5 +1,0 @@
-actionperformed//ActionPerformed(ActionEvent e) 
-es un evento de ActionListener. 
-ActionListener se usa para detectar y manejar eventos 
-los cuales tienen lugar 
-cuando se produce una acción sobre un elemento del programa
